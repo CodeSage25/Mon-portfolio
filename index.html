@@ -1,23 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Description pour référencement -->
-  <meta name="description" content="Portfolio de Ndako Yannick, intégrateur web spécialisé en HTML et Sass. Découvrez mes projets, compétences et services.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description pour référencement -->
+    <meta
+      name="description"
+      content="Portfolio de Ndako Yannick, intégrateur web spécialisé en HTML et Sass. Découvrez mes projets, compétences et services."
+    />
 
-  <!-- Mots-clés (optionnel) -->
-  <meta name="keywords" content="Portfolio, Intégration Web, HTML, Sass, Projets, UI Design, Ndako Yannick">
+    <!-- Mots-clés (optionnel) -->
+    <meta
+      name="keywords"
+      content="Portfolio, Intégration Web, HTML, Sass, Projets, UI Design, Ndako Yannick"
+    />
 
-  <!-- Auteur -->
-  <meta name="author" content="Ndako Yannick">
+    <!-- Auteur -->
+    <meta name="author" content="Ndako Yannick" />
     <title>Portfolio Ndako Yannick</title>
 
-   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
 
-     
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <nav-container>
+          <h2>Ndako Yannick</h2>
+          <ul class="right">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+            <li id="moon"><i class="fa-regular fa-moon"></i></li>
+          </ul>
+        </nav-container>
+        <header-container>
+          <div class="social">
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li><i class="fa-brands fa-github"></i></li>
+            </ul>
+          </div>
+          <div class="picture">
+            <img src="" alt="" />
+          </div>
+          <div class="presentation">
+            <h1>
+              Hi, I am Ndako <br />
+              Yannick
+            </h1>
+            <p class="key1">Front-end Developer</p>
+            <p class="key2">
+              Passionate front-en developer specializing in pixel-perfect web
+              design.
+            </p>
+            <div class="link">
+              <div class="link-container">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yannickndako@gmail.com"
+                  target="_blank"
+                >
+                  Contact Me <i class="fa-regular fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header-container>
+        <div class="down">
+
+            <div class="down-container">
+                <p><i class="fa-solid fa-computer-mouse"></i> Scroll down <i class="fa-solid fa-angles-down"></i></p>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <section class="about-me">
+        <div class="about-me-container">
+            <h2>About Me</h2>
+            <p>My introduction</p>
+        </div>
+        <div class="about-contain">
+<div class="left-image"></div>
+<div class="right-text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, necessitatibus quas, voluptate dignissimos sit officia qui cum adipisci voluptates porro, reprehenderit beatae. Culpa, accusantium fugit ipsa nulla quibusdam praesentium temporibus quae ad maxime at aliquam iure veritatis. Obcaecati, esse natus?</p>
+   
+    <span class="container">
+        <span>
+            <span class="num">02+</span>
+            <span class="txt">
+                Years<br> experience
+            </span>
+        </span>
+         <span>
+            <span class="num">20+</span>
+            <span class="txt">
+                Completed <br>project
+            </span>
+        </span>
+         <span>
+            <span class="num">06+</span>
+            <span class="txt">
+                Companies <br>
+                worked
+            </span>
+        </span>
+    </span>
+    <div class="download">
+        <!-- lien qui force le téléchargement et garde un nom de fichier lisible -->
+<a href="/assets/CV_Ndako_Yannick.pdf"
+   download="CV_Ndako_Yannick.pdf"
+   class="btn-download"
+   aria-label="Download Resume">
+  Download Resume
+ <i class="fa-solid fa-file-import" aria-hidden="true"></i>
+</a>
+
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <p>My technical skills</p>
+        </div>
+        <ul class="skills">
+            <li>HTML5 <i class="fa-brands fa-html5"></i></li>
+            <li>CSS3<i class="fa-brands fa-css3"></i></li>
+            <li>Git & Github <i class="fa-brands fa-git-alt"></i></li>
+            <li>Responsive design <i class="fa-solid fa-object-ungroup"></i></li>
+            <li>UI/ integration <i class="fa-solid fa-palette"></i></li>
+        </ul>
+    </section>
+  </body>
 </html>
