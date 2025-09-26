@@ -1,0 +1,19 @@
+.Compétences {
+  .skills-container {
+    text-align: center;
+    margin-top: 90px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    li {
+      color: $white2;
+      border: 1px solid transparent;
+      padding: 10px;
+      border-radius: 5px;
+      background: $white3;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.about-me {
+  .about-me-container {
+    margin-bottom: 40px;
+    text-align: center;
+    h2 {
+      color: $white1;
+      padding-bottom: 10px;
+    }
+    p {
+      color: $white2;
+    }
+  }
+  .about-contain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+    .left-image {
+      background: url(../img/computer.jpg) center/cover;
+      height: 300px;
+      width: 90%;
+
+      margin: 0 auto;
+    }
+    .right-text {
+      margin-left: 20px;
+
+      place-self: center;
+      color: $white2;
+
+      p {
+        line-height: 1.8;
+      }
+      span.container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 32px 0;
+        span {
+          span.num {
+            display: block;
+            color: $white1;
+          }
+        }
+      }
+      .download {
+        a {
+          text-decoration: none;
+          border: 1px solid transparent;
+          padding: 10px;
+          letter-spacing: 1.3px;
+          background: $white3;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
