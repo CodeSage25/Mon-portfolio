@@ -1,0 +1,43 @@
+footer {
+  margin-top: 90px;
+  position: relative;
+  max-width: 25000px;
+  padding-bottom: 30px;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: $white3;
+    position: absolute;
+    top: -20px;
+  }
+  footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    footer-left {
+      h3 {
+        color: $white1;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    footer-right {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+          a {
+            text-decoration: none;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

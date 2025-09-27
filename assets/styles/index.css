@@ -290,4 +290,221 @@ header nav .down p {
   line-height: 1.7;
   letter-spacing: 1px;
   font-size: 0.9rem;
+}
+
+.projects {
+  margin: 50px 0;
+}
+.projects .projects-container .div {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.projects .projects-container .project-card-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.projects .projects-container .project-card-container .card-container .img-container img {
+  width: 80%;
+  border-radius: 5px;
+}
+.projects .projects-container .project-card-container .card-container .text h3 {
+  color: white;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.projects .projects-container .project-card-container .card-container .text p {
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  width: 90%;
+}
+.projects .projects-container .project-card-container .card-container .text .link .link-container {
+  margin: 30px 0;
+}
+.projects .projects-container .project-card-container .card-container .text .link .link-container a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 10px;
+  letter-spacing: 1.3px;
+  background: rgba(237, 237, 237, 0.18);
+  border-radius: 5px;
+}
+
+.mail {
+  margin-top: 90px;
+}
+.mail .mail-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background: black;
+  width: 80%;
+  margin: 0 auto;
+  height: 250px;
+  border-radius: 10px;
+}
+.mail .mail-container .left-mail {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 30px;
+}
+.mail .mail-container .left-mail h3 {
+  color: white;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+.mail .mail-container .left-mail p {
+  line-height: 1.5;
+}
+.mail .mail-container .left-mail .link {
+  margin-top: 35px;
+}
+.mail .mail-container .left-mail .link a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 10px;
+  letter-spacing: 1.3px;
+  background: rgba(237, 237, 237, 0.18);
+  border-radius: 5px;
+}
+.mail .mail-container .right-mail {
+  background: url(../img/phone.webp) center/cover;
+  height: 80%;
+  width: 80%;
+  margin: 25px 0 10px 0;
+  border-radius: 5px;
+}
+
+.testimonial {
+  margin-top: 90px;
+}
+.testimonial .testimonial-container .testi {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial .testimonial-container .avis .avis-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+.testimonial .testimonial-container .avis .avis-container .containt {
+  place-self: center;
+  padding-bottom: 20px;
+  padding: 10px 30px 30px 30px;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper {
+  display: grid;
+  grid-template-columns: 20% 30% 20%;
+  padding: 20px 0;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper span.image {
+  width: 100%;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper span.image img {
+  width: 65%;
+  border-radius: 100px;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper .text h5 {
+  color: white;
+  font-size: 1rem;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper .text h6 {
+  color: rgba(237, 237, 237, 0.814);
+  padding-top: 5px;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper span span.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-left: 10px;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .upper span span.container li i {
+  color: #ff9800;
+  font-size: 0.8rem;
+}
+.testimonial .testimonial-container .avis .avis-container .containt .down p {
+  line-height: 1.5;
+}
+
+.contact-me {
+  margin-top: 70px;
+}
+.contact-me .contact-me-container .contact {
+  text-align: center;
+}
+.contact-me .contact-me-container .container {
+  margin-bottom: 30px;
+}
+.contact-me .contact-me-container .container .uper .uper-container {
+  display: grid;
+  grid-template-columns: 5% 90%;
+  gap: 10px;
+}
+.contact-me .contact-me-container .container .uper .uper-container .uper-left {
+  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: right;
+      justify-content: right;
+}
+.contact-me .contact-me-container .container .uper .uper-container .uper-left i {
+  color: rgba(237, 237, 237, 0.814);
+  font-size: 1.5rem;
+}
+.contact-me .contact-me-container .container .uper .uper-container .uper-right h5 {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  padding-bottom: 8px;
+}
+.contact-me .contact-me-container .container .uper .uper-container .uper-right p a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 90px;
+  position: relative;
+  max-width: 25000px;
+  padding-bottom: 30px;
+}
+footer::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: rgba(237, 237, 237, 0.18);
+  position: absolute;
+  top: -20px;
+}
+footer footer-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -ms-flex-align: center;
+      align-items: center;
+}
+footer footer-container footer-left h3 {
+  color: white;
+}
+footer footer-container footer-left p {
+  font-size: 0.9rem;
+}
+footer footer-container footer-right ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+footer footer-container footer-right ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */

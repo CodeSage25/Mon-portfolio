@@ -1,0 +1,42 @@
+.contact-me {
+  margin-top: 70px;
+  .contact-me-container {
+    .contact {
+      text-align: center;
+    }
+    .container {
+      margin-bottom: 30px;
+      .uper {
+        .uper-container {
+          display: grid;
+          grid-template-columns: 5% 90%;
+          gap: 10px;
+
+          .uper-left {
+            display: block;
+            display: flex;
+            justify-content: right;
+
+            i {
+              color: $white2;
+              font-size: 1.5rem;
+            }
+          }
+          .uper-right {
+            h5 {
+              color: $white1;
+              font-size: 1rem;
+              letter-spacing: 1.2px;
+              padding-bottom: 8px;
+            }
+            p {
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

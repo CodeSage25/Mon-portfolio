@@ -1,0 +1,45 @@
+.mail {
+  margin-top: 90px;
+  .mail-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: $noir;
+    width: 80%;
+    margin: 0 auto;
+    height: 250px;
+    border-radius: 10px;
+
+    .left-mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      h3 {
+        color: $white1;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+      }
+      p {
+        line-height: 1.5;
+      }
+      .link {
+        margin-top: 35px;
+        a {
+          text-decoration: none;
+          border: 1px solid transparent;
+          padding: 10px;
+          letter-spacing: 1.3px;
+          background: rgba(237, 237, 237, 0.18);
+          border-radius: 5px;
+        }
+      }
+    }
+    .right-mail {
+      background: url(../img/phone.webp) center/cover;
+      height: 80%;
+      width: 80%;
+      margin: 25px 0 10px 0;
+      border-radius: 5px;
+    }
+  }
+}

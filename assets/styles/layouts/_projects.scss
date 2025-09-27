@@ -1,0 +1,49 @@
+.projects {
+  margin: 50px 0;
+  .projects-container {
+    .div {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .project-card-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+
+      .card-container {
+        .img-container {
+          img {
+            width: 80%;
+            border-radius: 5px;
+          }
+        }
+        .text {
+          h3 {
+            color: $white1;
+            padding: 15px 0;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+          }
+          p {
+            line-height: 1.3;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            width: 90%;
+          }
+          .link {
+            .link-container {
+              margin: 30px 0;
+              a {
+                text-decoration: none;
+                border: 1px solid transparent;
+                padding: 10px;
+                letter-spacing: 1.3px;
+                background: rgba(237, 237, 237, 0.18);
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
