@@ -12,14 +12,12 @@
   }
   .about-contain {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     margin: 20px;
     .left-image {
-      background: url(../img/computer.jpg) center/cover;
-      height: 300px;
-      width: 90%;
+      background: url(../img/pexels-gabby-k-6373291.webp) center/cover;
 
-      margin: 0 auto;
+      width: 90%;
     }
     .right-text {
       margin-left: 20px;
@@ -42,13 +40,62 @@
         }
       }
       .download {
-        a {
+        // a {
+        //   text-decoration: none;
+        //   border: 1px solid transparent;
+        //   padding: 10px;
+        //   letter-spacing: 1.3px;
+        //   background: $white3;
+        //   border-radius: 5px;
+        // }
+
+        .btn-download {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 25px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          background: linear-gradient(
+            135deg,
+            #6a11cb,
+            #2575fc
+          ); // violet -> bleu
+          border-radius: 10px;
           text-decoration: none;
-          border: 1px solid transparent;
-          padding: 10px;
-          letter-spacing: 1.3px;
-          background: $white3;
-          border-radius: 5px;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+
+          i {
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            transform: translateY(-3px) scale(1.05); // léger zoom + levée
+            box-shadow: 0 8px 20px rgba(106, 17, 203, 0.5);
+          }
+
+          &:hover i {
+            transform: rotate(20deg); // petite rotation de l’icône
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: skewX(-45deg);
+            transition: left 0.5s ease;
+          }
+
+          &:hover::before {
+            left: 100%;
+          }
         }
       }
     }

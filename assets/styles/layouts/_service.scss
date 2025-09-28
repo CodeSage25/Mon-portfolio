@@ -1,4 +1,6 @@
 .services {
+  justify-content: center;
+
   .services-container {
     text-align: center;
     margin-top: 100px;
@@ -8,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    justify-content: center;
 
     .menu {
       width: 80%;
@@ -44,9 +47,11 @@
       display: inline-block;
       margin-top: 10px;
       color: white;
-      background: purple;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       padding: 5px 10px;
       border-radius: 8px;
+      font-family: roboto;
+      font-size: 0.9rem;
     }
 
     // cacher input
@@ -69,6 +74,7 @@
 
     .boite-container {
       width: 80%;
+
       span {
         i {
           font-size: 2rem;
@@ -84,6 +90,7 @@
       }
       li {
         padding: 5px 0;
+
         p {
           color: $white2;
           line-height: 1.7;

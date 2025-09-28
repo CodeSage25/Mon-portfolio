@@ -2,18 +2,58 @@
   .skills-container {
     text-align: center;
     margin-top: 90px;
+    margin-bottom: 50px;
   }
-  ul {
+  // ul {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   margin-top: 40px;
+
+  //   li {
+  //     color: $white2;
+  //     border: 1px solid transparent;
+  //     padding: 10px;
+  //     border-radius: 5px;
+  //     background: $white3;
+  //   }
+  // }
+
+  .skills {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 
     li {
-      color: $white2;
-      border: 1px solid transparent;
-      padding: 10px;
-      border-radius: 5px;
-      background: $white3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      cursor: default;
+      transition: all 0.3s ease;
+      position: relative;
+
+      i {
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.15); // léger glow
+        box-shadow: 0 4px 10px rgba(106, 17, 203, 0.2);
+
+        i {
+          color: #6a11cb; // icône légèrement colorée
+        }
+      }
     }
   }
 }

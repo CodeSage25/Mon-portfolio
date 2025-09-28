@@ -32,9 +32,35 @@ footer {
         align-items: center;
 
         li {
+          // a {
+          //   text-decoration: none;
+          //   font-size: 0.9rem;
           a {
-            text-decoration: none;
-            font-size: 0.9rem;
+            color: #ccc; // couleur de base (gris clair)
+            // font-size: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+
+            &:hover {
+              color: #2575fc; // violet moderne
+              transform: translateY(-3px) scale(1.1); // petit zoom et levée
+            }
+
+            // petit effet underline pour les liens texte
+            &:not(:has(i))::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -4px;
+              width: 0%;
+              height: 2px;
+              background: #2575fc;
+              transition: width 0.3s ease;
+            }
+
+            &:not(:has(i)):hover::after {
+              width: 100%;
+            }
           }
         }
       }

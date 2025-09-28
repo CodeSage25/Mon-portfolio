@@ -32,6 +32,29 @@
             p {
               a {
                 text-decoration: none;
+                // color: #2575fc; // couleur de base
+                text-decoration: none;
+                position: relative;
+                transition: all 0.3s ease;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  width: 0%;
+                  height: 2px;
+                  left: 0;
+                  bottom: -2px;
+                  background: #2575fc; // couleur de la ligne
+                  transition: width 0.3s ease;
+                }
+
+                // &:hover {
+                //   color: #6a11cb; // couleur au hover
+                // }
+
+                &:hover::after {
+                  width: 100%; // ligne qui s’étend sous le texte
+                }
               }
             }
           }
