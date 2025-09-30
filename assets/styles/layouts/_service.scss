@@ -12,6 +12,16 @@
     gap: 20px;
     justify-content: center;
 
+    @media screen and (max-width: 1162px) {
+      margin: 30px 30px;
+      gap: 5px;
+    }
+    @media screen and (max-width: 840px) {
+      display: block;
+      margin: 0 50px;
+      width: 100%;
+    }
+
     .menu {
       width: 80%;
       span {
@@ -41,7 +51,12 @@
         }
       }
     }
-    // bouton
+    //  / Cacher l'input
+    #toggle {
+      display: none;
+    }
+
+    // Bouton
     .toggle-btn {
       cursor: pointer;
       display: inline-block;
@@ -52,28 +67,35 @@
       border-radius: 8px;
       font-family: roboto;
       font-size: 0.9rem;
+
+      &::after {
+        content: "Voir plus";
+      }
     }
 
-    // cacher input
-    #toggle {
+    // Par défaut → cacher les éléments après le 2ème
+    .menu li:nth-child(n + 3) {
       display: none;
     }
 
-    // quand coché → affiche tout le menu
-    #toggle:checked ~ .menu li {
+    // Quand le checkbox est coché → afficher tout le menu
+    .menu:has(+ #toggle:checked) li {
       display: list-item;
     }
 
-    // texte dynamique du bouton
-    #toggle:not(:checked) + .toggle-btn::after {
-      content: "Voir plus";
-    }
+    // Changer le texte du bouton selon l’état
     #toggle:checked + .toggle-btn::after {
       content: "Voir moins";
     }
 
     .boite-container {
       width: 80%;
+      @media screen and (max-width: 1162px) {
+        width: 65%;
+      }
+      @media screen and (max-width: 840px) {
+        margin: 10px 0 50px 0;
+      }
 
       span {
         i {
@@ -87,6 +109,9 @@
         margin: 0px 0 20px 0;
         color: $white1;
         line-height: 1.3;
+        @media screen and (max-width: 840px) {
+          padding-top: 10px;
+        }
       }
       li {
         padding: 5px 0;

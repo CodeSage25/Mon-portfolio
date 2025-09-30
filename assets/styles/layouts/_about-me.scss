@@ -14,10 +14,17 @@
     display: grid;
     grid-template-columns: 40% 60%;
     margin: 20px;
+
+    @media screen and (max-width: 1150px) {
+      display: block;
+    }
     .left-image {
       background: url(../img/pexels-gabby-k-6373291.webp) center/cover;
-
       width: 90%;
+
+      @media screen and (max-width: 1150px) {
+        display: none;
+      }
     }
     .right-text {
       margin-left: 20px;
@@ -27,11 +34,22 @@
 
       p {
         line-height: 1.8;
+
+        @media screen and (max-width: 1150px) {
+          width: 80%;
+          margin: 0 auto;
+        }
       }
       span.container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 32px 0;
+
+        @media screen and (max-width: 1150px) {
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+        }
         span {
           span.num {
             display: block;
@@ -40,6 +58,11 @@
         }
       }
       .download {
+        @media screen and (max-width: 1150px) {
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+        }
         // a {
         //   text-decoration: none;
         //   border: 1px solid transparent;
