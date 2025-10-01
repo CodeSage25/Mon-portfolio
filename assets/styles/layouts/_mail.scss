@@ -8,12 +8,23 @@
     margin: 0 auto;
     height: 250px;
     border-radius: 10px;
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      height: 300px;
+    }
 
     .left-mail {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0 30px;
+      .left-mail-container {
+        @media screen and (max-width: 650px) {
+          text-align: center;
+        }
+      }
       h3 {
         color: $white1;
         padding-bottom: 10px;
@@ -84,6 +95,10 @@
 
       margin: 15px 20px 25px 0;
       border-radius: 5px;
+
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
     }
   }
 }

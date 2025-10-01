@@ -1,5 +1,9 @@
 .testimonial {
   margin-top: 90px;
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+
   .testimonial-container {
     .testi {
       text-align: center;
@@ -12,6 +16,7 @@
         grid-template-rows: 1fr 1fr;
         width: 80%;
         margin: 0 auto;
+
         .containt {
           place-self: center;
           padding-bottom: 20px;

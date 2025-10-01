@@ -39,6 +39,10 @@
           width: 80%;
           margin: 0 auto;
         }
+        @media screen and (max-width: 460px) {
+          width: 95%;
+          margin: 0 auto;
+        }
       }
       span.container {
         display: grid;

@@ -3,9 +3,19 @@
   .contact-me-container {
     .contact {
       text-align: center;
+
+      p {
+        @media screen and (max-width: 400px) {
+          padding: 0 10px;
+        }
+      }
     }
     .container {
       margin-bottom: 30px;
+      @media screen and (max-width: 800px) {
+        margin-left: 20px;
+        margin-top: 30px;
+      }
       .uper {
         .uper-container {
           display: grid;

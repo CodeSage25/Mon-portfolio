@@ -29,11 +29,26 @@ footer {
         display: block;
         grid-template-columns: 100%;
       }
+
       h3 {
         color: $white1;
+        @media screen and (max-width: 500px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 500px) {
+          text-align: center;
+          padding-bottom: 15px;
+        }
       }
       p {
         font-size: 0.9rem;
+        @media screen and (max-width: 500px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 500px) {
+          text-align: center;
+          padding-bottom: 5px;
+        }
       }
     }
     footer-right {

@@ -24,6 +24,9 @@
 
     .menu {
       width: 80%;
+      @media screen and (max-width: 750px) {
+        width: 95%;
+      }
       span {
         i {
           font-size: 2rem;
